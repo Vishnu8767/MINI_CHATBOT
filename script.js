@@ -9,4 +9,6 @@ let botResponse = getBotResponse(userText.toLowerCase());
    chatBox.scrollTop = chatBox.scrollHeight;
   userInput.value = "";
 }
- 
+function getBotResponse(input) {
+  if (input.includes("hello") || input.includes("hi")) {
+    return "Hello! How can I help you?"; 
