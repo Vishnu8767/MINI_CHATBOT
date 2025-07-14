@@ -11,4 +11,6 @@ let botResponse = getBotResponse(userText.toLowerCase());
 }
 function getBotResponse(input) {
   if (input.includes("hello") || input.includes("hi")) {
-    return "Hello! How can I help you?"; 
+    return "Hello! How can I help you?";
+	  } else if (input.includes("your name")) {
+    return "I'm Mini Bot!";
