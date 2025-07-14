@@ -4,4 +4,6 @@ function sendMessage() {
   const userText = userInput.value.trim();
   if (!userText) return;  
    chatBox.innerHTML += `<div><strong>You:</strong> ${userText}</div>`;
-
+let botResponse = getBotResponse(userText.toLowerCase());
+  chatBox.innerHTML += `<div><strong>Bot:</strong> ${botResponse}</div>`;
+  
