@@ -14,3 +14,9 @@ function getBotResponse(input) {
     return "Hello! How can I help you?";
 	  } else if (input.includes("your name")) {
     return "I'm Mini Bot!";
+		    } else if (input.includes("bye")) {
+    return "Goodbye! Have a great day!";
+  } else {
+    return "I'm not sure how to respond to that.";
+  }
+}
