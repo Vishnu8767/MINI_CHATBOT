@@ -6,4 +6,7 @@ function sendMessage() {
    chatBox.innerHTML += `<div><strong>You:</strong> ${userText}</div>`;
 let botResponse = getBotResponse(userText.toLowerCase());
   chatBox.innerHTML += `<div><strong>Bot:</strong> ${botResponse}</div>`;
-  
+   chatBox.scrollTop = chatBox.scrollHeight;
+  userInput.value = "";
+}
+ 
